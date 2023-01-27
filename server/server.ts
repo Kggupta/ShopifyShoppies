@@ -1,4 +1,4 @@
-import axios, { AxiosResponse } from 'axios';
+import axios from 'axios';
 
 import movie from "./types/movie";
 import search from "./types/search";
@@ -9,18 +9,21 @@ import {
 	GraphQLString,
 	GraphQLList,
 } from "graphql";
-import { graphqlHTTP } from 'express-graphql';
+
+const cors = require('cors');
+
+import dotenv from 'dotenv';
+dotenv.config();
 
 import express from 'express';
 
-const cors = require('cors');
-require("dotenv").config();
+import { graphqlHTTP } from 'express-graphql';
 
 const app = express();
 
 app.use(cors());
 
-const port: string = process.env.PORT || '8000';
+const port: string = process.env.PORT || '5000';
 
 const query = new GraphQLObjectType({
   name: "RootQuery",
@@ -32,9 +35,9 @@ const query = new GraphQLObjectType({
       },
       async resolve(parent, args) {
         const result: search[] = await axios.get(`http://www.omdbapi.com/?s=${args.title}&apikey=${process.env.KEY}`)
-        	.then((res : AxiosResponse<any>) => res.data.Search)
-        	.catch(console.log);
-			
+			.then((res) => res.data.Search)
+			.catch(console.log);
+
         return result;
       }
     },
