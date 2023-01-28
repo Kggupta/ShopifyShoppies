@@ -23,7 +23,8 @@
     "react-scripts": "4.0.3",
     "redux": "^4.1.0",
     "typescript": "^4.2.4",
-    "web-vitals": "^1.1.1"
+    "web-vitals": "^1.1.1",
+    "postcss-custom-properties": "^10.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -37,11 +38,14 @@
       "react-app/jest"
     ]
   },
+  "resolutions": {
+    "react-scripts/postcss-preset-env/postcss-custom-properties": "^10.0.0"
+  },
   "browserslist": {
     "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
     ],
     "development": [
       "last 1 chrome version",
