@@ -2,3 +2,9 @@ package-lock.json
 .DS_Store
 node_modules/
 .env
+
+/coverage
+/build
+.env.development.local
+.env.local
+npm-debug.log*
