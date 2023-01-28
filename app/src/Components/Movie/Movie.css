@@ -1,0 +1,50 @@
+.card {
+    margin: 1% 1% 1% 1%;
+    box-shadow: 0 0px 8px 0 rgba(122, 122, 122, 0.2), 0 0px 4px 0 rgba(48, 47, 47, 0.19);
+}
+
+.card:hover {
+    transition: 0.3s;
+    transform: translate3D(0,-1px,0) scale(1.015);
+}
+
+.cont {
+    display: flex;
+}
+
+.posters {
+    width: 10vh;
+    height: auto;
+}
+
+.info {
+    font-weight: 300;
+    margin-top: 5%;
+    
+}
+
+.title {
+    font-weight: 700;
+}
+
+.spacing {
+    flex-grow: 0.05;
+}
+
+.button {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.button-space{
+    flex-grow: 1;
+}
+
+@media only screen and (max-width: 700px) {
+	.title {
+        margin-left: 10%;
+	}
+    .info {
+        margin-left: 10%
+    }
+}
