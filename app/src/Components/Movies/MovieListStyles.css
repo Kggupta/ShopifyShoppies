@@ -1,0 +1,23 @@
+.main {
+    flex-grow: 2;
+    width: 20vw;
+}
+
+.result-list {
+    overflow-y: auto;
+    height: 50vh
+}
+
+.result-title {
+    font-weight: bolder;
+    font-size: 130%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+    .main {
+        width: auto;
+    }
+  }
