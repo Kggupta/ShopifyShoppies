@@ -1,0 +1,68 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #ffffff;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Components {
+  padding: 5%;
+  background: rgb(0, 0, 0);
+}
+
+.ResultsandNominations {
+  display: flex;
+}
+
+.mainTitleComp {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 250%;
+  font-family: monospace;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 700px) {
+  .ResultsandNominations {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .ResultsandNominations {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .Components {
+    height: 100vh;
+  }
+}
