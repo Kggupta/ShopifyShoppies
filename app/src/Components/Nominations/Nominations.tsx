@@ -21,7 +21,6 @@ const Nominations = () => {
         <br />
         <div className="nominated-height">
           {comp?.map((movie: any, index: number) => {
-            console.log(movie);
             return (
               <>
                 <NominationCard key={index}

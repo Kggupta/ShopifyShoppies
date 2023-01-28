@@ -23,7 +23,6 @@ export default function SearchBar() {
   });
 
   useEffect(() => {
-    console.log(inputValue);
     movieType();
   }, [inputValue, movieType]);
 
