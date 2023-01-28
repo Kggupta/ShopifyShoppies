@@ -35,10 +35,10 @@ const query = new GraphQLObjectType({
       },
       async resolve(parent, args) {
         const result: search[] = await axios.get(`http://www.omdbapi.com/?s=${args.title}&apikey=${process.env.KEY}`)
-			.then((res) => res.data.Search)
-			.catch(console.log);
+          .then((res) => res.data.Search)
+          .catch(console.log);
 
-        return result;
+          return result;
       }
     },
   },
